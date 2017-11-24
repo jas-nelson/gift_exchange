@@ -39,7 +39,7 @@ class GiftExchange:
 
     def print_matches(self):
         for gifter, giftee in self.matches:
-            print(str(gifter[0]) + " buys for " + str(giftee[0]) + "\n")
+            print(str(gifter[0]) + " buys for " + str(giftee[0]))
             logging.info(msg=str(gifter[0]) + " buys for " + str(giftee[0]))
 
 
