@@ -1,4 +1,4 @@
-from gift_exchange import *
+from gift_exchange import GiftExchange
 import argparse
 import os.path
 
@@ -14,8 +14,7 @@ if __name__ == "__main__":
 
     exchange = GiftExchange()
     fileNameStr = args.participantFile
-    print(fileNameStr)
-    print(os.path.abspath(fileNameStr))
+    log = args.log
 
     exchange.generate_pairs(filename=fileNameStr)
     exchange.print_matches()
