@@ -13,9 +13,13 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    exchange = GiftExchange()
     fileNameStr = args.f
-    log = args.log
+    logArg = args.log
+    exchange = GiftExchange(log=logArg)
+
+    # fileNameStr = "/Users/jason/projects/holiday_gift_exchange/pippenger_sibling_group"
+
+    exchange = GiftExchange()
 
     exchange.generate_pairs(filename=fileNameStr)
     exchange.print_matches()
