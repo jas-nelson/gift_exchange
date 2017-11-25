@@ -31,7 +31,7 @@ class GiftExchange:
 
     def find_match(self, person):
         possibleMatch = random.choice(self.participants)
-        if possibleMatch not in self.prev_matches:
+        if possibleMatch not in self.prev_matches and possibleMatch != person:
             self.matches.append((person, possibleMatch))
             self.prev_matches.append(possibleMatch)
         else:
