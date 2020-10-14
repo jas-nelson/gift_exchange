@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     # fileNameStr = "/Users/jason/projects/holiday_gift_exchange/pippenger_sibling_group"
 
-    exchange = GiftExchange()
+    # exchange = GiftExchange()
 
     exchange.generate_pairs(filename=fileNameStr)
     exchange.print_matches()
