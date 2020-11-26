@@ -52,7 +52,7 @@ class GiftExchange:
         fileHandler = logging.FileHandler(logname)
         fileHandler.setLevel(logging.INFO)
 
-        formatter = logging.Formatter('%(asctime)s %(message)s')
+        formatter = logging.Formatter('%(asctime)s;%(message)s')
         fileHandler.setFormatter(formatter)
 
         self.logger.addHandler(fileHandler)
